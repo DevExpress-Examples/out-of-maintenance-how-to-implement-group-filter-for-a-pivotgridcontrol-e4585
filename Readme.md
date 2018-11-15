@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/GroupFilter/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/GroupFilter/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/GroupFilter/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/GroupFilter/MainWindow.xaml.vb))
+<!-- default file list end -->
 # How to Implement Group Filter for a PivotGridControl
 
 
