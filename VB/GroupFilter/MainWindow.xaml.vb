@@ -1,11 +1,11 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.Windows
+﻿Imports System.Windows
 Imports GroupFilter.nwindDataSetTableAdapters
 Imports DevExpress.Xpf.PivotGrid
 
 Namespace GroupFilter
 	Partial Public Class MainWindow
 		Inherits Window
+
 		Public Sub New()
 			InitializeComponent()
 			Dim salesPersonDataAdapter As New SalesPersonTableAdapter()
@@ -14,8 +14,7 @@ Namespace GroupFilter
 			pivotGridControl1.DataSource = salesPersonDataAdapter.GetData()
 
 			' Creates a group and adds two fields to it.
-            Dim OrderDateGroup As PivotGridGroup = pivotGridControl1.Groups.Add( _
-                pivotGridControl1.Fields(2), pivotGridControl1.Fields(3))
+			Dim OrderDateGroup As PivotGridGroup = pivotGridControl1.Groups.Add(pivotGridControl1.Fields(2), pivotGridControl1.Fields(3))
 
 			' Locks the PivotGroupFilterValues object by disabling visual updates.
 			OrderDateGroup.FilterValues.BeginUpdate()
